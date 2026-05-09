@@ -29,14 +29,14 @@ The following table summarizes the performance of the implemented algorithms on 
 | **eil51** | Simulated Annealing | 1313.46 | 820.05 | **37.5%** |
 
 
-#Team Members
+**Team Members**
 
 Shada Alshayie (431201710)
 
 Rola Alharbi (422205738)
 
 
-#Supervision
+**Supervision**
 Dr. Seham Alharbi 
 
 Course: Artificial Intelligence (CS 432)
