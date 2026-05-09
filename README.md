@@ -4,6 +4,7 @@
 This project focuses on solving the **Traveling Salesman Problem (TSP)**, an NP-hard optimization challenge. We implemented and compared two metaheuristic algorithms to find the shortest possible route for visiting a set of cities.
 
 ##  Project Structure
+```
 TSPProject/
 ├── src/main/java/tsp/
 │   ├── City.java
@@ -22,6 +23,7 @@ TSPProject/
 ├── src/test/resources/
 ├── pom.xml
 └── README.md
+```
 
 ##  Algorithms Implemented
 1. **Hill Climbing (HC)**: 
