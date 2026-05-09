@@ -1,4 +1,15 @@
 # TSP Solver: Hill Climbing & Simulated Annealing
+**Course: Artificial Intelligence (CS 432)**
+
+**Team Members**
+
+   - Shada Alshayie (431201710)
+
+   - Rola Alharbi (422205738)
+
+**Supervision**
+   Dr. Seham Alharbi 
+   
 
 ##  Project Overview
 This project focuses on solving the **Traveling Salesman Problem (TSP)**, an NP-hard optimization challenge. We implemented and compared two metaheuristic algorithms to find the shortest possible route for visiting a set of cities.
@@ -43,17 +54,3 @@ The following table summarizes the performance of the implemented algorithms on 
 | **berlin52** | Simulated Annealing | 22205.61 | 12624.80 | **43.1%** |
 | **eil51** | Hill Climbing | 1313.46 | 654.51 | **50.1%** |
 | **eil51** | Simulated Annealing | 1313.46 | 820.05 | **37.5%** |
-
-##
-
-**Team Members**
-
-Shada Alshayie (431201710)
-
-Rola Alharbi (422205738)
-
-
-**Supervision**
-Dr. Seham Alharbi 
-
-Course: Artificial Intelligence (CS 432)
