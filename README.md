@@ -4,10 +4,24 @@
 This project focuses on solving the **Traveling Salesman Problem (TSP)**, an NP-hard optimization challenge. We implemented and compared two metaheuristic algorithms to find the shortest possible route for visiting a set of cities.
 
 ##  Project Structure
-- **`src/main/java/tsp/`**: Contains the core logic (Main, Solvers, Models, and Utils).
-- **`data/`**: Stores benchmark datasets (`berlin52`, `eil51`) in `.tsp` and `.txt` formats.
-- **`src/test/`**: Reserved for unit testing and quality assurance.
-- **`pom.xml`**: Manages project dependencies and build configurations via Maven.
+TSPProject/
+├── src/main/java/tsp/
+│   ├── City.java
+│   ├── TSPLIBReader.java
+│   ├── TSPUtils.java
+│   ├── Main.java
+│   ├── HillClimbingSolver.java
+│   └── SimulatedAnnealingSolver.java
+├── data/
+│   ├── berlin52.tsp
+│   ├── berlin52.txt
+│   ├── eil51.tsp
+│   └── eil51.txt
+├── src/main/resources/
+├── src/test/java/
+├── src/test/resources/
+├── pom.xml
+└── README.md
 
 ##  Algorithms Implemented
 1. **Hill Climbing (HC)**: 
@@ -28,6 +42,7 @@ The following table summarizes the performance of the implemented algorithms on 
 | **eil51** | Hill Climbing | 1313.46 | 654.51 | **50.1%** |
 | **eil51** | Simulated Annealing | 1313.46 | 820.05 | **37.5%** |
 
+##
 
 **Team Members**
 
