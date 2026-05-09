@@ -17,14 +17,16 @@ This project focuses on solving the **Traveling Salesman Problem (TSP)**, an NP-
    - A probabilistic approach inspired by metallurgy.
    - Employs a **cooling schedule** to escape local optima and seek a global minimum.
 
-## 🚀 How to Run
-To compile and execute the project from the terminal, use:
-```bash
-javac src/main/java/tsp/*.java -d . && java tsp.Main
+## 📊 Experimental Results
 
-Dataset,Best Algorithm,Initial Distance,Final Distance,Improvement
-berlin52,Hill Climbing,22205.6,11431.8,~48.5%
-eil51,Hill Climbing,1313.5,654.5,~50.1%
+The following table summarizes the performance of the implemented algorithms on standard TSPLIB datasets:
+
+| Dataset | Algorithm | Initial Distance | Final Distance | Improvement (%) |
+| :--- | :--- | :--- | :--- | :--- |
+| **berlin52** | Hill Climbing | 22205.61 | 11431.77 | **48.5%** |
+| **berlin52** | Simulated Annealing | 22205.61 | 12624.80 | **43.1%** |
+| **eil51** | Hill Climbing | 1313.46 | 654.51 | **50.1%** |
+| **eil51** | Simulated Annealing | 1313.46 | 820.05 | **37.5%** |
 
 👥 Team Members
 Shada Alshayie (431201710)
