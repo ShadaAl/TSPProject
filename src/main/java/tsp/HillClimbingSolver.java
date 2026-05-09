@@ -27,8 +27,30 @@ public class HillClimbingSolver {
 		double currentDistance = TSPUtils.totalDistance(currentTour);
 
 		
-		// TODO: Implement Hill Climbing algorithm solution here.
-		
+        boolean improved = true;
+        iterationsUsed = 0;
+
+        while (improved && iterationsUsed < maxIterations) {
+            improved = false;
+            
+            // (2-opt neighborhood)
+            for (int i = 0; i < currentTour.size() - 1; i++) {
+                for (int j = i + 1; j < currentTour.size(); j++) {
+                    
+                    List<City> neighborTour = new ArrayList<>(currentTour);
+                    Collections.swap(neighborTour, i, j);
+                    
+                    double neighborDistance = TSPUtils.totalDistance(neighborTour);
+                    
+                    if (neighborDistance < currentDistance) {
+                        currentTour = neighborTour;
+                        currentDistance = neighborDistance;
+                        improved = true;
+                    }
+                }
+            }
+            iterationsUsed++; 
+        }
 		
 		
 		return currentTour;
