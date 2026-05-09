@@ -54,3 +54,8 @@ The following table summarizes the performance of the implemented algorithms on 
 | **berlin52** | Simulated Annealing | 22205.61 | 12624.80 | **43.1%** |
 | **eil51** | Hill Climbing | 1313.46 | 654.51 | **50.1%** |
 | **eil51** | Simulated Annealing | 1313.46 | 820.05 | **37.5%** |
+
+## References
+
+- **GeeksforGeeks**: [Hill Climbing and Simulated Annealing for TSP](https://www.geeksforgeeks.org/artificial-intelligence/hill-climbing-and-simulated-annealing-for-the-traveling-salesman-problem/) - Used for understanding the core concepts and algorithmic logic.
+- **Tiago Santi (GitHub)**: [TSP Solver Implementation](https://github.com/TiagoSanti/hill-climbing-and-simulated-annealing.git) - Used as a reference for project structure and implementation best practices.
