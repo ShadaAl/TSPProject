@@ -63,12 +63,44 @@ public class Main {
 	}
 
 	public static void runHillClimbing(String datasetName, List<City> cities) {
-		
 		// TODO: Write the code that displays your solution output here.
-	}
+        System.out.println("\n--- Hill Climbing: " + datasetName + " ---");
+        
+        HillClimbingSolver hc = new HillClimbingSolver(1000);
+        
+        double initialDistance = TSPUtils.totalDistance(cities);
+        
+        // تشغيل الخوارزمية
+        List<City> solution = hc.solve(cities);
+        
+        double improvedDistance = TSPUtils.totalDistance(solution);
+        double improvement = initialDistance - improvedDistance;
+
+        System.out.println("Initial distance: " + initialDistance);
+        System.out.println("Improved distance: " + improvedDistance);
+        System.out.println("Improvement: " + improvement);
+        // System.out.println("Iterations used: " + hc.getIterationsUsed()); 
+    }
+	
 
 	public static void runSimulatedAnnealing(String datasetName, List<City> cities) {
 		
 		// TODO: Write the code that displays your solution output here.
-	}
+        System.out.println("\n--- Simulated Annealing: " + datasetName + " ---");
+        
+        SimulatedAnnealingSolver sa = new SimulatedAnnealingSolver(10000, 0.003, 10000);
+        
+        double initialDistance = TSPUtils.totalDistance(cities);
+        
+        // تشغيل الخوارزمية
+        List<City> solution = sa.solve(cities);
+        
+        double improvedDistance = TSPUtils.totalDistance(solution);
+        double improvement = initialDistance - improvedDistance;
+
+        System.out.println("Initial distance: " + initialDistance);
+        System.out.println("Improved distance: " + improvedDistance);
+        System.out.println("Improvement: " + improvement);
+    }
+	
 }
